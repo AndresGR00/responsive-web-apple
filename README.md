@@ -1,1 +1,1 @@
-#README file for the apple´s responsive web proyect
+#README file for the apple´s responsive web project
