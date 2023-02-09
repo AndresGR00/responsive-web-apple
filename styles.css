@@ -1,0 +1,74 @@
+:root {
+
+/* COLOR PALETTE */
+
+    /* BACKGROUND COLORS */
+
+    --ap-background-color-dark: #121212;
+  
+    /* TEXT COLORS */
+
+    --ap-globalnav-color-secondary: #E8E8E8;
+    --ap-globalnav-color-hover: #FFFFFF;
+}
+
+
+/* GLOBAL STYLES */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+    background-color: var(--ap-background-color-dark);
+    width: 100vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* LAYOUT */
+.ap-layout-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ap-layout-grid {
+    display: grid;
+  }
+
+
+/* END GLOBAL STYLES */
+
+.ap-header-nav-ul{
+    justify-content: space-between;
+    gap: 44px;
+}
+
+.ap-header-main-li a{
+    color: var(--ap-globalnav-color-secondary);
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01em;    
+    
+}
+
+.ap-header-main-li a:hover{
+    color: var(--ap-globalnav-color-hover);    
+}
+.ap-header-main-li svg{
+    fill: currentColor;
+}
