@@ -72,3 +72,33 @@ a {
 .ap-header-main-li svg{
     fill: currentColor;
 }
+.ap-hamburger-label,
+.ap-hamburger {
+    color: var(--ap-globalnav-color-secondary);
+    display: none;
+}
+
+@media screen and (max-width: 994px) {
+
+.ap-header-layout{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ap-hamburger-label{
+    display: block;
+    
+}
+
+.main-li-desktop{
+    display: none;
+}
+
+/* WHEN CHECKED -> GENERAL SIBLING COMBINATOR */
+.ap-hamburger:checked ~ .main-li-desktop{
+    display: block;
+    padding: 2em 0;
+    
+  }
+
+}
