@@ -1,10 +1,15 @@
+@font-face {
+  font-family: Helvetica Neue;
+  src: url(./Assets/Fonts/HelveticaNeue.ttf);
+}
+
 :root{
 
 --ap-navbar-color: #121212;
 --ap-navbar-text-color: #d0d0d0;
 --ap-navbar-text-color-hover: #FFF;
 
---ap-primary-font: Helvetica, Helvetica Neue, Arial, sans-serif;
+--ap-primary-font: Helvetica Neue;
 
 
 --ap-size-text-navbar: 12px;
@@ -92,6 +97,10 @@ li {
   .ap-header-layout,
   .ap-header-nav-ul{
     gap: 44px;
+  }
+
+  .ap-header-nav-ul{
+    padding-bottom: 3px;
   }
 
   
