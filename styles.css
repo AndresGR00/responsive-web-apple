@@ -121,8 +121,8 @@ li {
 /* Lineas hamburguesa */
 
 .hamburger-lines {    
-    height: 12px;
-    width: 18px;
+    height: 9px;
+    width: 17px;
     position: absolute;
     top: 18px;
     right: 18px;
@@ -136,7 +136,7 @@ li {
 
   .hamburger-lines .line {
     display: block;
-    height: 2px;
+    height: 1.2px;
     width: 100%;
     border-radius: 3px;
     background: var(--ap-navbar-text-color);
@@ -236,3 +236,13 @@ li {
     .ap-logo{
       margin-right: calc(75%);
     }
+
+  }
+
+  @media screen and (max-width: 768px){   /* Tablet*/
+
+    .ap-logo{
+      margin-right: calc(70);
+    }
+
+  }    
