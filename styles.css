@@ -159,7 +159,40 @@ li {
 
 
 
-  @media screen and (max-width: 48rem){
+@media screen and (max-width: 1035px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 43px;
+  }
+
+
+}
+
+@media screen and (max-width: 1000px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 40px;
+  }
+
+
+}
+
+@media screen and (max-width: 950px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 30px;
+  }
+
+
+}
+
+
+/* breakpoint apple a tablet */
+
+  @media screen and (max-width: 833px){ 
 
     .desktop{
         display: none;
@@ -200,5 +233,6 @@ li {
 
     /* Fin Animación lineas hamburgesa */
 
-
-  }
+    .ap-logo{
+      margin-right: calc(75%);
+    }
