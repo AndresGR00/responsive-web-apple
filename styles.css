@@ -13,8 +13,10 @@
 
 
 --ap-size-text-navbar: 12px;
+--ap-size-text-navbar-responsive: 28px;
 
 --ap-font-weight-400: 400;
+--ap-font-weight-600: 600;
 
 
 
@@ -52,6 +54,7 @@ li {
 }
 
 /* End Global Styles */
+
 
 /* Layout */
 .ap-layout-flex {
@@ -96,14 +99,16 @@ li {
 
   .ap-header-layout,
   .ap-header-nav-ul{
-    gap: 44px;
+    gap: 44px;                   /*Tricky adjust desktop version*/
   }
 
   .ap-header-nav-ul{
     padding-bottom: 3px;
   }
 
-  
+  .ap-header-nav{
+    background-color: var(--ap-navbar-color);
+  }  
 
 
   .ap-hamburger-label,
@@ -118,13 +123,13 @@ li {
 
 
 
-/* Lineas hamburguesa */
+/* Hamburger lines */
 
 .hamburger-lines {    
     height: 9px;
     width: 17px;
     position: absolute;
-    top: 18px;
+    top: 17px;
     right: 18px;
     z-index: 2;
     display: flex;
@@ -151,48 +156,21 @@ li {
   .hamburger-lines .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.3s ease-in-out;
+    top: 3px;
+    position: relative;
   }
  
 
 
-/* Fin lineas hamburguesa */
+/* End hamburger lines */
+/* End Header */
 
 
-
-@media screen and (max-width: 1035px){
-
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 43px;
-  }
-
-
-}
-
-@media screen and (max-width: 1000px){
-
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 40px;
-  }
-
-
-}
-
-@media screen and (max-width: 950px){
-
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 30px;
-  }
-
-
-}
-
-
-/* breakpoint apple a tablet */
+/* Apple´s Breakpoint */
 
   @media screen and (max-width: 833px){ 
+
+    /* Header */
 
     .desktop{
         display: none;
@@ -201,8 +179,22 @@ li {
         display: inline-block;
     }
 
-    .ap-header-nav-ul {
+    .ap-header-layout{
+      flex-wrap: wrap;
+    }
+
+    .ap-header-nav{              /*Tricky adjust*/
+      position: relative;
+      padding: 80px 0 0 35px;
+      top: -80px;
+      right: 20px;
+    }
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
         flex-direction: column;
+        margin: -35px 550px 100% 0;
+        gap: 19px;
+        align-items: flex-start;
     }
 
     .ap-hamburger-label{
@@ -217,32 +209,46 @@ li {
         display: block;
     }
 
-    .ap-header-nav-ul {
-        flex-direction: column;
-    }
-
-    /* Animación lineas hamburgesa */
+    /* Animation of hamburger´s lines */
 
     .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line1 {
-        transform: rotate(36deg);
+        transform: rotate(45deg);
     }
 
     .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line3 {
-        transform: rotate(-36deg);
+        transform: rotate(-45deg);
     }    
 
-    /* Fin Animación lineas hamburgesa */
+    /* Fin Animation of hamburger´s lines */
 
-    .ap-logo{
-      margin-right: calc(75%);
+    .ap-logo{                   /*Tricky adjust*/
+      position: relative;
+      right: 310px;
+      top: 1px;
     }
+
+    .ap-shop{                    /*Tricky adjust*/
+      position: relative;
+      left: 305px;
+      top: 2px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      position: relative;
+      left: 315px;
+      top: 1.4px;
+    }
+
+    header a{
+      font-size: var(--ap-size-text-navbar-responsive);
+      font-weight: 600;
+      letter-spacing: .007em;
+    }
+
+    /* End Header */
+   
+
 
   }
 
-  @media screen and (max-width: 768px){   /* Tablet*/
-
-    .ap-logo{
-      margin-right: calc(70);
-    }
-
-  }    
+  
