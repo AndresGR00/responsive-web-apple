@@ -9,7 +9,8 @@
 --ap-navbar-text-color: #d0d0d0;
 --ap-navbar-text-color-hover: #FFF;
 
---ap-primary-font: Helvetica Neue;
+--ap-primary-font: Helvetica Neue, Arial;
+--ap-primary-font-reserve: "Questrial", sans-serif;
 
 
 --ap-size-text-navbar: 12px;
@@ -33,8 +34,9 @@ html {
 }
 
 body{
-    padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 *,
