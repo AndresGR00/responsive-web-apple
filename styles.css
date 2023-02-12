@@ -168,6 +168,43 @@ li {
 /* End Header */
 
 
+
+@media screen and (max-width: 1030px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 40px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+
+@media screen and (max-width: 980px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 35px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+
+@media screen and (max-width: 920px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 30px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+
+@media screen and (max-width: 870px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 27px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+
 /* Apple´s Breakpoint */
 
   @media screen and (max-width: 833px){ 
@@ -194,7 +231,7 @@ li {
 
     .ap-header-nav-ul {                /*Tricky adjust*/
         flex-direction: column;
-        margin: -35px 550px 100% 0;
+        margin: -15px 550px 100% 0;
         gap: 19px;
         align-items: flex-start;
     }
@@ -225,19 +262,19 @@ li {
 
     .ap-logo{                   /*Tricky adjust*/
       position: relative;
-      right: 310px;
-      top: 1px;
+      right: 340px;
+      top: 1.7px;
     }
 
     .ap-shop{                    /*Tricky adjust*/
       position: relative;
-      left: 305px;
+      left: 315px;
       top: 2px;
     }
 
     .ap-search{                   /*Tricky adjust*/
       position: relative;
-      left: 315px;
+      left: 305px;
       top: 1.4px;
     }
 
@@ -253,4 +290,49 @@ li {
 
   }
 
-  
+  @media screen and (max-width: 768px){
+
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+        margin: -12px 490px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 305px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 280px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 270px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 375px){
+
+    .ap-header-nav{              /*Tricky adjust*/
+      padding: 60px 70px 100% 70px;    /*Opción para que aparezca y wrapped*/
+    }
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: 10px 57px 0 0;
+  }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 110px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 85px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 80px;
+    }
+
+
+  }
