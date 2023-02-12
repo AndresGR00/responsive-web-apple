@@ -9,8 +9,7 @@
 --ap-navbar-text-color: #d0d0d0;
 --ap-navbar-text-color-hover: #FFF;
 
---ap-primary-font: Helvetica Neue, Arial;
---ap-primary-font-reserve: "Questrial", sans-serif;
+--ap-primary-font: Helvetica Neue, Arial, Questrial, sans-serif;
 
 
 --ap-size-text-navbar: 12px;
@@ -177,7 +176,6 @@ li {
   }
 
 }
-
 @media screen and (max-width: 980px){
 
   .ap-header-layout,
@@ -186,7 +184,6 @@ li {
   }
 
 }
-
 @media screen and (max-width: 920px){
 
   .ap-header-layout,
@@ -195,7 +192,6 @@ li {
   }
 
 }
-
 @media screen and (max-width: 870px){
 
   .ap-header-layout,
@@ -204,10 +200,8 @@ li {
   }
 
 }
-
 /* Apple´s Breakpoint */
-
-  @media screen and (max-width: 833px){ 
+@media screen and (max-width: 833px){   /*Main COnfiguration of breakpoint*/
 
     /* Header */
 
@@ -288,51 +282,264 @@ li {
    
 
 
-  }
-
-  @media screen and (max-width: 768px){
-
+}
+@media screen and (max-width: 810px){
 
     .ap-header-nav-ul {                /*Tricky adjust*/
-        margin: -12px 490px 100% 0;
+      margin: -12px 515px 100% 0;
     }
 
     .ap-logo{                   /*Tricky adjust*/
-      right: 305px;
+      right: 310px;
     }
 
     .ap-shop{                    /*Tricky adjust*/
-      left: 280px;
+      left: 295px;
     }
 
     .ap-search{                   /*Tricky adjust*/
+      left: 280px;
+    }
+
+}
+
+@media screen and (max-width: 768px){  /*Tablet*/
+
+
+    .ap-header-nav-ul {                
+        margin: -12px 490px 100% 0;
+    }
+
+    .ap-logo{                   
+      right: 305px;
+    }
+
+    .ap-shop{                    
+      left: 280px;
+    }
+
+    .ap-search{                   
       left: 270px;
     }
 
 
-  }
+}
 
-  @media screen and (max-width: 375px){
-
-    .ap-header-nav{              /*Tricky adjust*/
-      padding: 60px 70px 100% 70px;    /*Opción para que aparezca y wrapped*/
-    }
+  @media screen and (max-width: 745px){
 
     .ap-header-nav-ul {                /*Tricky adjust*/
-      margin: 10px 57px 0 0;
+      margin: -12px 445px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 280px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 265px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 255px;
+    }
+
   }
+  @media screen and (max-width: 695px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 395px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 260px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 245px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 235px;
+    }
+
+  }
+  @media screen and (max-width: 655px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 355px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 240px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 225px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 215px;
+    }
+
+  }
+  @media screen and (max-width: 615px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 312px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 220px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 205px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 195px;
+    }
+
+  }
+  @media screen and (max-width: 580px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 280px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 200px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 185px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 175px;
+    }
+
+  }
+  @media screen and (max-width: 535px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 235px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 170px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 155px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 145px;
+    }
+
+  }
+  @media screen and (max-width: 475px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 170px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 140px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 125px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 115px;
+    }
+
+  }
+  @media screen and (max-width: 420px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 122px 100% 0;
+    }
 
     .ap-logo{                   /*Tricky adjust*/
       right: 110px;
     }
 
     .ap-shop{                    /*Tricky adjust*/
-      left: 85px;
+      left: 95px;
     }
 
     .ap-search{                   /*Tricky adjust*/
+      left: 85px;
+    }
+
+  }
+
+  @media screen and (max-width: 375px){   /*Mobile*/
+
+    .ap-header-nav{              
+      padding: 60px 70px 100% 70px;    
+    }
+
+    .ap-header-nav-ul {                
+      margin: 10px 57px 0 0;
+  }
+
+    .ap-logo{                  
+      right: 110px;
+    }
+
+    .ap-shop{                    
+      left: 85px;
+    }
+
+    .ap-search{                   
       left: 80px;
     }
 
 
   }
+
+  @media screen and (max-width: 350px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 50px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 80px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 75px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 65px;
+    }
+
+  }
+  @media screen and (max-width: 300px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 0px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 50px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 45px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 35px;
+    }
+
+  }
+
+  
