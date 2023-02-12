@@ -1,0 +1,545 @@
+@font-face {
+  font-family: Helvetica Neue;
+  src: url(./Assets/Fonts/HelveticaNeue.ttf);
+}
+
+:root{
+
+--ap-navbar-color: #121212;
+--ap-navbar-text-color: #d0d0d0;
+--ap-navbar-text-color-hover: #FFF;
+
+--ap-primary-font: Helvetica Neue, Arial, Questrial, sans-serif;
+
+
+--ap-size-text-navbar: 12px;
+--ap-size-text-navbar-responsive: 28px;
+
+--ap-font-weight-400: 400;
+--ap-font-weight-600: 600;
+
+
+
+
+}
+
+
+
+
+/* Global Styles */
+
+html {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* End Global Styles */
+
+
+/* Layout */
+.ap-layout-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ap-layout-grid {
+    display: grid;
+  }
+  /* End Layout */
+
+
+  /* Header */
+
+  header{
+    background-color: var(--ap-navbar-color);
+    margin: 0 auto;
+    min-width: 100vw;     
+    
+  }
+
+  header a {
+    color: var(--ap-navbar-text-color);
+    font-family: var(--ap-primary-font);
+    font-size: var(--ap-size-text-navbar);
+    font-weight: var(--ap-font-weight-400);
+    line-height: 1;
+    white-space: nowrap;
+    letter-spacing: -.01em;
+    
+  }
+
+  header a:hover {
+    color: var(--ap-navbar-text-color-hover);
+  }
+
+  header svg {
+    fill: currentColor;
+  }
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 44px;                   /*Tricky adjust desktop version*/
+  }
+
+  .ap-header-nav-ul{
+    padding-bottom: 3px;
+  }
+
+  .ap-header-nav{
+    background-color: var(--ap-navbar-color);
+  }  
+
+
+  .ap-hamburger-label,
+  .ap-hamburger {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+
+
+
+/* Hamburger lines */
+
+.hamburger-lines {    
+    height: 9px;
+    width: 17px;
+    position: absolute;
+    top: 17px;
+    right: 18px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .hamburger-lines .line {
+    display: block;
+    height: 1.2px;
+    width: 100%;
+    border-radius: 3px;
+    background: var(--ap-navbar-text-color);
+  }
+
+  .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+
+  .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+    top: 3px;
+    position: relative;
+  }
+ 
+
+
+/* End hamburger lines */
+/* End Header */
+
+
+
+@media screen and (max-width: 1030px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 40px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+@media screen and (max-width: 980px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 35px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+@media screen and (max-width: 920px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 30px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+@media screen and (max-width: 870px){
+
+  .ap-header-layout,
+  .ap-header-nav-ul{
+    gap: 27px;                   /*Tricky adjust desktop version*/
+  }
+
+}
+/* Apple´s Breakpoint */
+@media screen and (max-width: 833px){   /*Main COnfiguration of breakpoint*/
+
+    /* Header */
+
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: inline-block;
+    }
+
+    .ap-header-layout{
+      flex-wrap: wrap;
+    }
+
+    .ap-header-nav{              /*Tricky adjust*/
+      position: relative;
+      padding: 80px 0 0 35px;
+      top: -80px;
+      right: 20px;
+    }
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+        flex-direction: column;
+        margin: -15px 550px 100% 0;
+        gap: 19px;
+        align-items: flex-start;
+    }
+
+    .ap-hamburger-label{
+        display: inline-block;
+    }
+
+    .ap-header-nav {
+        display: none;
+    }
+
+    .ap-hamburger:checked ~ .ap-header-nav {
+        display: block;
+    }
+
+    /* Animation of hamburger´s lines */
+
+    .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }    
+
+    /* Fin Animation of hamburger´s lines */
+
+    .ap-logo{                   /*Tricky adjust*/
+      position: relative;
+      right: 340px;
+      top: 1.7px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      position: relative;
+      left: 315px;
+      top: 2px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      position: relative;
+      left: 305px;
+      top: 1.4px;
+    }
+
+    header a{
+      font-size: var(--ap-size-text-navbar-responsive);
+      font-weight: 600;
+      letter-spacing: .007em;
+    }
+
+    /* End Header */
+   
+
+
+}
+@media screen and (max-width: 810px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 515px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 310px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 295px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 280px;
+    }
+
+}
+
+@media screen and (max-width: 768px){  /*Tablet*/
+
+
+    .ap-header-nav-ul {                
+        margin: -12px 490px 100% 0;
+    }
+
+    .ap-logo{                   
+      right: 305px;
+    }
+
+    .ap-shop{                    
+      left: 280px;
+    }
+
+    .ap-search{                   
+      left: 270px;
+    }
+
+
+}
+
+  @media screen and (max-width: 745px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 445px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 280px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 265px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 255px;
+    }
+
+  }
+  @media screen and (max-width: 695px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 395px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 260px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 245px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 235px;
+    }
+
+  }
+  @media screen and (max-width: 655px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 355px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 240px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 225px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 215px;
+    }
+
+  }
+  @media screen and (max-width: 615px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 312px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 220px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 205px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 195px;
+    }
+
+  }
+  @media screen and (max-width: 580px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 280px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 200px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 185px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 175px;
+    }
+
+  }
+  @media screen and (max-width: 535px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 235px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 170px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 155px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 145px;
+    }
+
+  }
+  @media screen and (max-width: 475px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 170px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 140px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 125px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 115px;
+    }
+
+  }
+  @media screen and (max-width: 420px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 122px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 110px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 95px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 85px;
+    }
+
+  }
+
+  @media screen and (max-width: 375px){   /*Mobile*/
+
+    .ap-header-nav{              
+      padding: 60px 70px 100% 70px;    
+    }
+
+    .ap-header-nav-ul {                
+      margin: 10px 57px 0 0;
+  }
+
+    .ap-logo{                  
+      right: 110px;
+    }
+
+    .ap-shop{                    
+      left: 85px;
+    }
+
+    .ap-search{                   
+      left: 80px;
+    }
+
+
+  }
+
+  @media screen and (max-width: 350px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 50px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 80px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 75px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 65px;
+    }
+
+  }
+  @media screen and (max-width: 300px){
+
+    .ap-header-nav-ul {                /*Tricky adjust*/
+      margin: -12px 0px 100% 0;
+    }
+
+    .ap-logo{                   /*Tricky adjust*/
+      right: 50px;
+    }
+
+    .ap-shop{                    /*Tricky adjust*/
+      left: 45px;
+    }
+
+    .ap-search{                   /*Tricky adjust*/
+      left: 35px;
+    }
+
+  }
+
+  
