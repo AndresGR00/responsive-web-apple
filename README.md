@@ -5,3 +5,5 @@
 Iphone Section Just Done (in a responsive way)
 
 Homepod Section Just Done (in a responsive way)
+
+New path created for promos´ section
