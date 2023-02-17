@@ -312,6 +312,70 @@ li {
 
 /* End Iphone 14 */
 
+/* HomePod */
+
+.ap-homepod{
+  height: 44em;
+  overflow: hidden;
+  margin-top: 1em;
+}
+
+.ap-homepod-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/homepod_i29k2a.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-start;
+}
+
+.ap-homepod-information{
+  flex-direction: column;
+  margin-top: 4.6em;
+  gap: .4em;
+}
+
+.ap-homepod-information h2{
+  color: var(--ap-color-050);
+}
+
+.ap-homepod-information h3{
+  color: var(--ap-color-050);
+}
+
+.ap-homepod-information h2{
+  font-weight: var(--ap-font-weight-600);
+  font-size: 3.3em;
+}
+
+.ap-homepod-information h3{
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.7em;
+}
+
+.ap-homepod-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.3em;
+}
+
+.ap-homepod-ctas{
+  gap: 2em;
+}
+
+.ap-homepod-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+.enlace{
+  gap: .4em;
+}
+
+.enlace:hover{
+  text-decoration: underline;
+}
+
+
+/* End HomePod */
 
 
 
@@ -570,6 +634,80 @@ li {
     }
 
     /* End Iphone 14 */
+
+    /* Iphone 14 */
+
+    .ap-iphone-14{
+      height: 32em;
+    }
+
+    .ap-iphone-14-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676244717/Apple%C2%B4s%20homepage%20project/iphone_14_normal_responsive_krkj1z.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+    .ap-iphone-14-information{
+      margin-top: 2.8em;
+      gap: .4em;
+    }
+    
+    .ap-iphone-14-information h2{
+      font-size: 2em;
+    }
+    
+    .ap-iphone-14-information h3{
+      font-size: 1.2em;
+    }
+    
+    .ap-iphone-14-information a{
+      font-size: 1.1em;
+    }
+    
+    .ap-iphone-ctas{
+      gap: .8em;
+    }
+
+    /* End Iphone 14 */
+
+
+    /* HomePod */
+
+    .ap-homepod{
+      height: 30em;
+      margin-top: 0.7em;
+    }
+
+    .ap-homepod-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676669043/Apple%C2%B4s%20homepage%20project/homepod_small_nwtmyy.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+    .ap-homepod-information{
+      margin-top: 3.2em;
+      gap: .4em;
+    }
+    
+    .ap-homepod-information h2{
+      font-size: 2em;
+    }
+    
+    .ap-homepod-information h3{
+      font-size: 1.2em;
+    }
+    
+    .ap-homepod-information a{
+      font-size: 1.1em;
+    }
+    
+    .ap-homepod-ctas{
+      gap: .8em;
+    }
+
+    /* End HomePod */
 
 
   }
