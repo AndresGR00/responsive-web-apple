@@ -9,6 +9,11 @@
 --ap-navbar-text-color: #d0d0d0;
 --ap-navbar-text-color-hover: #FFF;
 
+--ap-color-050: #f5f5f7;
+--ap-color-100: #2997ff;
+--ap-color-200: #1d1d1f;
+
+
 --ap-primary-font: Helvetica Neue, Arial, Questrial, sans-serif;
 
 
@@ -46,8 +51,18 @@ body{
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ap-primary-font);
+}
+
 a{
     text-decoration: none;
+    font-family: var(--ap-primary-font);
 }
 
 li {
@@ -75,8 +90,9 @@ li {
   header{
     background-color: var(--ap-navbar-color);
     margin: 0 auto;
-    min-width: 100vw;     
-    
+    min-width: 100vw; 
+    position: fixed; 
+    z-index: 2;   
   }
 
   header a {
@@ -168,6 +184,141 @@ li {
 
 
 
+/* Iphone 14 Pro*/
+
+.ap-iphone-14-pro{
+  height: 46em;
+  overflow: hidden;
+}
+
+.ap-iphone-14-pro-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/iphone_14_pro_fo2per.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-start;
+}
+
+.ap-iphone-14-pro-information{
+  flex-direction: column;
+  margin-top: 6.3em;
+  gap: .4em;
+}
+
+.ap-iphone-14-pro-information h2{
+  color: var(--ap-color-050);
+}
+
+.ap-iphone-14-pro-information h3{
+  color: var(--ap-color-050);
+}
+
+.ap-iphone-14-pro-information h2{
+  font-weight: var(--ap-font-weight-600);
+  font-size: 3.3em;
+}
+
+.ap-iphone-14-pro-information h3{
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.7em;
+}
+
+.ap-iphone-14-pro-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.3em;
+}
+
+.ap-iphone-ctas{
+  gap: 2em;
+}
+
+.ap-iphone-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+.enlace{
+  gap: .4em;
+}
+
+.enlace:hover{
+  text-decoration: underline;
+}
+
+/* End Iphone 14 Pro*/
+
+
+/* Iphone 14 */
+
+.ap-iphone-14{
+  height: 44em;
+  overflow: hidden;
+}
+
+.ap-iphone-14-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/iphone_14_grm8sf.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-start;
+}
+
+.ap-iphone-14-information{
+  flex-direction: column;
+  margin-top: 3em;
+  gap: .4em;
+}
+
+.ap-iphone-14-information h2{
+  color: var(--ap-color-200);
+}
+
+.ap-iphone-14-information h3{
+  color: var(--ap-color-200);
+}
+
+.ap-iphone-14-information h2{
+  font-weight: var(--ap-font-weight-600);
+  font-size: 3.3em;
+}
+
+.ap-iphone-14-information h3{
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.7em;
+}
+
+.ap-iphone-14-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.3em;
+}
+
+.ap-iphone-ctas{
+  gap: 2em;
+}
+
+.ap-iphone-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+.enlace{
+  gap: .4em;
+}
+
+.enlace:hover{
+  text-decoration: underline;
+}
+
+
+/* End Iphone 14 */
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1030px){
 
   .ap-header-layout,
@@ -201,7 +352,7 @@ li {
 
 }
 /* Apple´s Breakpoint */
-@media screen and (max-width: 833px){   /*Main COnfiguration of breakpoint*/
+@media screen and (max-width: 833px){   /*Main Configuration of breakpoint*/
 
     /* Header */
 
@@ -342,6 +493,84 @@ li {
     .ap-search{                   /*Tricky adjust*/
       left: 255px;
     }
+
+  }
+  @media screen and (max-width: 734px){       /* Changes Pictures*/
+
+    /* Iphone 14 Pro*/
+
+    .ap-iphone-14-pro{
+      height: 34.5em;
+    }
+
+    .ap-iphone-14-pro-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676243645/Apple%C2%B4s%20homepage%20project/iphone_14_responsive_teys0t.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+    .ap-iphone-14-pro-information{
+      margin-top: 4.9em;
+      gap: .4em;
+    }
+    
+    .ap-iphone-14-pro-information h2{
+      font-size: 2em;
+    }
+    
+    .ap-iphone-14-pro-information h3{
+      font-size: 1.2em;
+    }
+    
+    .ap-iphone-14-pro-information a{
+      font-size: 1.1em;
+    }
+    
+    .ap-iphone-ctas{
+      gap: .8em;
+    }
+
+    /* End Iphone 14 Pro*/
+
+
+
+    /* Iphone 14 */
+
+    .ap-iphone-14{
+      height: 32em;
+    }
+
+    .ap-iphone-14-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676244717/Apple%C2%B4s%20homepage%20project/iphone_14_normal_responsive_krkj1z.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+    .ap-iphone-14-information{
+      margin-top: 2.8em;
+      gap: .4em;
+    }
+    
+    .ap-iphone-14-information h2{
+      font-size: 2em;
+    }
+    
+    .ap-iphone-14-information h3{
+      font-size: 1.2em;
+    }
+    
+    .ap-iphone-14-information a{
+      font-size: 1.1em;
+    }
+    
+    .ap-iphone-ctas{
+      gap: .8em;
+    }
+
+    /* End Iphone 14 */
+
 
   }
   @media screen and (max-width: 695px){
