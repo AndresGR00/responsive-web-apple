@@ -2,4 +2,4 @@
 
 !important: The header is built in a tricked way to imitate the effect without using js (it is not built in the most code-friendly way)
 
-New path for develop iphone section just been created
+Iphone Section Just Done (in a responsive way)
