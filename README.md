@@ -4,4 +4,4 @@
 
 Iphone Section Just Done (in a responsive way)
 
-New branch created for Homepod section
+Homepod Section Just Done (in a responsive way)
