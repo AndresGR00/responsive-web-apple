@@ -12,6 +12,7 @@
 --ap-color-050: #f5f5f7;
 --ap-color-100: #2997ff;
 --ap-color-200: #1d1d1f;
+--ap-color-extra: #ed1d0a;
 
 
 --ap-primary-font: Helvetica Neue, Arial, Questrial, sans-serif;
@@ -56,7 +57,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: var(--ap-primary-font);
 }
 
@@ -317,7 +319,7 @@ li {
 .ap-homepod{
   height: 44em;
   overflow: hidden;
-  margin-top: 1em;
+  margin-top: .7em;
 }
 
 .ap-homepod-banner{
@@ -378,9 +380,138 @@ li {
 /* End HomePod */
 
 
+/* Promos Section*/
+
+.ap-promos-section{
+  grid-template-columns: repeat(2, 1fr);
+  gap: .7em;
+  padding: 0 .7em;
+  margin-top: .7em;
+}
+
+  /* Watch */
+
+.ap-watch{
+  height: 36em;
+  overflow: hidden;
+}
+
+.ap-watch-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/apple_watch_series_8_e4ovaw.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-start;
+}
+
+.ap-watch-information{
+  flex-direction: column;
+  margin-top: 4.6em;
+  gap: .4em;
+}
+
+.ap-watch-information h4{
+  color: var(--ap-color-050);
+  letter-spacing: 0.1em;
+}
+
+.ap-watch-information-headline svg{
+  fill: var(--ap-color-050);
+}
+
+.ap-watch-information-headline{
+  gap: 3px;
+}
+
+
+.ap-watch-information h5{
+  color: var(--ap-color-050);
+}
+
+.ap-watch-information p{
+  color: var(--ap-color-extra);
+  font-size: .8em;
+  letter-spacing: .2em;
+}
+
+
+.ap-watch-information h4{
+  font-weight: var(--ap-font-weight-600);
+  font-size: 2em;
+}
+
+.ap-watch-information h5{
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.15em;
+}
+
+.ap-watch-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1em;
+}
+
+.ap-watch-ctas{
+  gap: 2em;
+}
+
+.ap-watch-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+.enlace{
+  gap: .4em;
+}
+
+.enlace:hover{
+  text-decoration: underline;
+}
+
+
+/* End Watch */
+
+/* End Promos Section*/
 
 
 
+@media screen and (max-width: 1068px){
+
+  /* Promos section changes img*/
+
+  /* Watch*/
+
+
+  .ap-watch{
+    height: 30em;
+    overflow: hidden;
+  }
+
+  .ap-watch-banner{
+    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676679694/Apple%C2%B4s%20homepage%20project/apple_watch_series_8_small_j7gq6v.webp);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+  }
+
+  .ap-watch-information {
+    margin-top: 2.5em;
+  }
+
+  .ap-watch-information p{
+    font-size: .65em;
+    letter-spacing: .17em;
+  }
+  
+  
+  .ap-watch-information h4{
+    font-weight: var(--ap-font-weight-600);
+    font-size: 1.3em;
+  }
+
+  .ap-watch-information-headline svg{
+    height: 1.6em;
+  }
+}
 
 
 @media screen and (max-width: 1030px){
@@ -521,6 +652,7 @@ li {
 @media screen and (max-width: 768px){  /*Tablet*/
 
 
+  
     .ap-header-nav-ul {                
         margin: -12px 490px 100% 0;
     }
@@ -708,6 +840,16 @@ li {
     }
 
     /* End HomePod */
+
+    /* Promos Section*/
+
+    .ap-promos-section{
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+
+
+/* End Promos Section*/
 
 
   }
@@ -908,5 +1050,3 @@ li {
     }
 
   }
-
-  
