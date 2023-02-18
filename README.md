@@ -8,5 +8,7 @@ Homepod Section Just Done (in a responsive way)
 
 Promos Section Just Done (in a responsive way)
 
+New path created for develop the carousel
+
 
 (Adjust this: ">" its no done yet)
