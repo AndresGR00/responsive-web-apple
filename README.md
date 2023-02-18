@@ -5,3 +5,8 @@
 Iphone Section Just Done (in a responsive way)
 
 Homepod Section Just Done (in a responsive way)
+
+Promos Section Just Done (in a responsive way)
+
+
+(Adjust this: ">" its no done yet)
