@@ -25,6 +25,25 @@
 --ap-font-weight-600: 600;
 
 
+--ap-h2-fontsize-desktop: 3.3em;
+--ap-h3-fontsize-desktop: 1.7em;
+--ap-h4-fontsize-desktop: 2em;
+--ap-h5-fontsize-desktop: 1.15em;
+--ap-a-fontsize-main-sections: 1.3em;
+--ap-a-fontsize-promo-sections: 1em;
+
+--ap-cta-gap-main-sections: 2em;
+
+
+--ap-h2-fontsize-mobile: 2em;
+--ap-h3-fontsize-mobile: 1.2em;
+--ap-h4-fontsize-mobile: 1.3em;
+--ap-a-fontsize-main-sections-mobile: 1.1em;
+
+--ap-cta-gap-main-sections-mobile: .8em;
+
+
+
 
 
 }
@@ -62,9 +81,18 @@ p {
   font-family: var(--ap-primary-font);
 }
 
-a{
-    text-decoration: none;
-    font-family: var(--ap-primary-font);
+a{  
+  text-decoration: none;
+  font-family: var(--ap-primary-font);
+  color: var(--ap-color-100);
+}
+
+a:hover{  
+  text-decoration: underline;
+}
+
+.enlace{
+  gap: .4em;
 }
 
 li {
@@ -105,11 +133,13 @@ li {
     line-height: 1;
     white-space: nowrap;
     letter-spacing: -.01em;
+
     
   }
 
   header a:hover {
     color: var(--ap-navbar-text-color-hover);
+    text-decoration: none;
   }
 
   header svg {
@@ -217,35 +247,29 @@ li {
 
 .ap-iphone-14-pro-information h2{
   font-weight: var(--ap-font-weight-600);
-  font-size: 3.3em;
+  font-size: var(--ap-h2-fontsize-desktop);
 }
 
 .ap-iphone-14-pro-information h3{
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.7em;
+  font-size: var(--ap-h3-fontsize-desktop);
 }
 
 .ap-iphone-14-pro-information a{
   color: var(--ap-color-100);
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.3em;
+  font-size: var(--ap-a-fontsize-main-sections);
 }
 
 .ap-iphone-ctas{
-  gap: 2em;
+  gap: var(--ap-cta-gap-main-sections);
 }
 
 .ap-iphone-ctas svg{
   fill: var(--ap-color-100);
 }
 
-.enlace{
-  gap: .4em;
-}
 
-.enlace:hover{
-  text-decoration: underline;
-}
 
 /* End Iphone 14 Pro*/
 
@@ -259,10 +283,10 @@ li {
 
 .ap-iphone-14-banner{
   background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/iphone_14_grm8sf.webp);
+  align-items: flex-start;
   background-size: cover;
   height: 100%;
   background-position: center;
-  align-items: flex-start;
 }
 
 .ap-iphone-14-information{
@@ -281,34 +305,26 @@ li {
 
 .ap-iphone-14-information h2{
   font-weight: var(--ap-font-weight-600);
-  font-size: 3.3em;
+  font-size: var(--ap-h2-fontsize-desktop);
 }
 
 .ap-iphone-14-information h3{
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.7em;
+  font-size: var(--ap-h3-fontsize-desktop);
 }
 
 .ap-iphone-14-information a{
   color: var(--ap-color-100);
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.3em;
+  font-size: var(--ap-a-fontsize-main-sections);
 }
 
 .ap-iphone-ctas{
-  gap: 2em;
+  gap: var(--ap-cta-gap-main-sections);
 }
 
 .ap-iphone-ctas svg{
   fill: var(--ap-color-100);
-}
-
-.enlace{
-  gap: .4em;
-}
-
-.enlace:hover{
-  text-decoration: underline;
 }
 
 
@@ -346,34 +362,26 @@ li {
 
 .ap-homepod-information h2{
   font-weight: var(--ap-font-weight-600);
-  font-size: 3.3em;
+  font-size: var(--ap-h2-fontsize-desktop);
 }
 
 .ap-homepod-information h3{
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.7em;
+  font-size: var(--ap-h3-fontsize-desktop);
 }
 
 .ap-homepod-information a{
   color: var(--ap-color-100);
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.3em;
+  font-size: var(--ap-a-fontsize-main-sections);
 }
 
 .ap-homepod-ctas{
-  gap: 2em;
+  gap: var(--ap-cta-gap-main-sections);
 }
 
 .ap-homepod-ctas svg{
   fill: var(--ap-color-100);
-}
-
-.enlace{
-  gap: .4em;
-}
-
-.enlace:hover{
-  text-decoration: underline;
 }
 
 
@@ -413,6 +421,8 @@ li {
 .ap-watch-information h4{
   color: var(--ap-color-050);
   letter-spacing: 0.1em;
+  font-weight: var(--ap-font-weight-600);
+  font-size: var(--ap-h4-fontsize-desktop);
 }
 
 .ap-watch-information-headline svg{
@@ -426,6 +436,8 @@ li {
 
 .ap-watch-information h5{
   color: var(--ap-color-050);
+  font-weight: var(--ap-font-weight-400);
+  font-size: var(--ap-h5-fontsize-desktop);
 }
 
 .ap-watch-information p{
@@ -435,38 +447,19 @@ li {
 }
 
 
-.ap-watch-information h4{
-  font-weight: var(--ap-font-weight-600);
-  font-size: 2em;
-}
-
-.ap-watch-information h5{
-  font-weight: var(--ap-font-weight-400);
-  font-size: 1.15em;
-}
-
 .ap-watch-information a{
   color: var(--ap-color-100);
   font-weight: var(--ap-font-weight-400);
-  font-size: 1em;
+  font-size: var(--ap-a-fontsize-promo-sections);
 }
 
 .ap-watch-ctas{
-  gap: 2em;
+  gap: var(--ap-cta-gap-main-sections);
 }
 
 .ap-watch-ctas svg{
   fill: var(--ap-color-100);
 }
-
-.enlace{
-  gap: .4em;
-}
-
-.enlace:hover{
-  text-decoration: underline;
-}
-
 
   /* End Watch */
 
@@ -494,44 +487,29 @@ li {
   
   .ap-black-unity-watch-information h4{
     color: var(--ap-color-050);
+    font-weight: var(--ap-font-weight-600);
+    font-size: var(--ap-h4-fontsize-desktop);
   }
   
   
   .ap-black-unity-watch-information h5{
     color: var(--ap-color-050);
-  }
-  
-  
-  .ap-black-unity-watch-information h4{
-    font-weight: var(--ap-font-weight-600);
-    font-size: 2em;
-  }
-  
-  .ap-black-unity-watch-information h5{
     font-weight: var(--ap-font-weight-400);
-    font-size: 1.15em;
+    font-size: var(--ap-h5-fontsize-desktop);
   }
   
   .ap-black-unity-watch-information a{
     color: var(--ap-color-100);
     font-weight: var(--ap-font-weight-400);
-    font-size: 1em;
+    font-size: var(--ap-a-fontsize-promo-sections);
   }
   
   .ap-black-unity-watch-ctas{
-    gap: 2em;
+    gap: var(--ap-cta-gap-main-sections);
   }
   
   .ap-black-unity-watch-ctas svg{
     fill: var(--ap-color-100);
-  }
-  
-  .enlace{
-    gap: .4em;
-  }
-  
-  .enlace:hover{
-    text-decoration: underline;
   }
   
   
@@ -562,6 +540,8 @@ li {
 .ap-tv-information h4{
   color: var(--ap-color-050);
   letter-spacing: 0.1em;
+  font-weight: var(--ap-font-weight-600);
+  font-size: var(--ap-h4-fontsize-desktop);
 }
 
 .ap-tv-headline svg{
@@ -575,110 +555,191 @@ li {
 
 .ap-tv-information h5{
   color: var(--ap-color-050);
-}
-
-.ap-tv-information p{
-  color: var(--ap-color-extra);
-  font-size: .8em;
-  letter-spacing: .2em;
-}
-
-
-.ap-tv-information h4{
-  font-weight: var(--ap-font-weight-600);
-  font-size: 2em;
-}
-
-.ap-tv-information h5{
   font-weight: var(--ap-font-weight-400);
-  font-size: 1.15em;
+  font-size: var(--ap-h5-fontsize-desktop);
 }
 
 .ap-tv-information a{
   color: var(--ap-color-100);
   font-weight: var(--ap-font-weight-400);
-  font-size: 1em;
+  font-size: var(--ap-a-fontsize-promo-sections);
 }
 
 .ap-tv-ctas{
-  gap: 2em;
+  gap: var(--ap-cta-gap-main-sections);
 }
 
 .ap-tv-ctas svg{
   fill: var(--ap-color-100);
 }
 
-.enlace{
-  gap: .4em;
-}
 
-.enlace:hover{
-  text-decoration: underline;
-}
+/* End Apple TV */
 
 
-  /* End Apple TV */
+/* Valentine´s Day */
 
-
-    /* Valentine´s Day */
-
-    .ap-valentine-day{
+.ap-valentine-day{
       height: 36em;
       overflow: hidden;
-    }
+}
     
-    .ap-valentine-day-banner{
+.ap-valentine-day-banner{
       background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900449/Apple%C2%B4s%20homepage%20project/promo_valentines_day_2023__bqunia.webp);
       background-size: cover;
       height: 100%;
       background-position: center;
       align-items: flex-start;
-    }
+}
     
-    .ap-valentine-day-information{
+.ap-valentine-day-information{
       flex-direction: column;
       margin-top: 4em;
       gap: .4em;
       text-align: center;
-    }
+}
     
-    .ap-valentine-day-information h4{
+.ap-valentine-day-information h4{
       color: var(--ap-color-200);
-    }
-    
-    
-    .ap-valentine-day-information h5{
-      color: var(--ap-color-200);
-    }
-    
-    
-    .ap-valentine-day-information h4{
       font-weight: var(--ap-font-weight-600);
       font-size: 2.5em;
-    }
+}
     
-    .ap-valentine-day-information h5{
+    
+.ap-valentine-day-information h5{
+      color: var(--ap-color-200);
       font-weight: var(--ap-font-weight-400);
-      font-size: 1.2em;
-    }
+      font-size: var(--ap-h5-fontsize-desktop);
+}
     
-    .ap-valentine-day-information a{
+.ap-valentine-day-information a{
       color: var(--ap-color-100);
       font-weight: var(--ap-font-weight-400);
-      font-size: 1em;
-    }
-    
-    .enlace{
-      gap: .4em;
-    }
-    
-    .enlace:hover{
-      text-decoration: underline;
-    }
+      font-size: var(--ap-a-fontsize-promo-sections);
+}
     
     
-    /* End Valentine´s Day */
+/* End Valentine´s Day */
+  
+  
+/* Fitness+ */
 
+.ap-fitness{
+  height: 36em;
+  overflow: hidden;
+}
+
+.ap-fitness-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/promo_apple_fitness_c9osx1.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-start;
+}
+
+.ap-fitness-information{
+  flex-direction: column;
+  margin-top: 3em;
+  gap: .4em;
+  text-align: center;
+}
+
+.ap-fitness-information h4{
+  color: var(--ap-color-200);
+  font-weight: var(--ap-font-weight-600);
+  font-size: var(--ap-h4-fontsize-desktop);
+}
+
+.ap-fitness-information-headline svg{
+  fill: var(--ap-color-200);
+}
+
+.ap-fitness-information-headline{
+  gap: 3px;
+}
+
+
+.ap-fitness-information h5{
+  color: var(--ap-color-200);
+  font-weight: var(--ap-font-weight-400);
+  font-size: var(--ap-h5-fontsize-desktop);
+}
+
+.ap-fitness-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: var(--ap-a-fontsize-promo-sections);
+}
+
+.ap-fitness-ctas{
+  gap: var(--ap-cta-gap-main-sections);
+}
+
+.ap-fitness-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+/* End Fitness+ */
+
+
+/* Apple Card */
+
+.ap-card{
+  height: 36em;
+  overflow: hidden;
+}
+
+.ap-card-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900448/Apple%C2%B4s%20homepage%20project/apple_card_b9seqb.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-start;
+}
+
+.ap-card-information{
+  flex-direction: column;
+  margin-top: 3em;
+  gap: .4em;
+  text-align: center;
+}
+
+.ap-card-information h4{
+  color: var(--ap-color-200);
+  font-weight: var(--ap-font-weight-600);
+  font-size: var(--ap-h4-fontsize-desktop);
+}
+
+.ap-card-information-headline svg{
+  fill: var(--ap-color-200);
+}
+
+.ap-card-information-headline{
+  gap: 3px;
+}
+
+
+.ap-card-information h5{
+  color: var(--ap-color-200);
+  font-weight: var(--ap-font-weight-400);
+  font-size: var(--ap-h5-fontsize-desktop);
+}
+
+.ap-card-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: var(--ap-a-fontsize-promo-sections);
+}
+
+.ap-card-ctas{
+  gap: var(--ap-cta-gap-main-sections);
+}
+
+.ap-card-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+/* End Apple Card */
 
 
 /* End Promos Section*/
@@ -713,7 +774,7 @@ li {
   
   .ap-watch-information h4{
     font-weight: var(--ap-font-weight-600);
-    font-size: 1.3em;
+    font-size: var(--ap-h4-fontsize-mobile);
   }
 
   .ap-watch-information-headline svg{
@@ -743,7 +804,7 @@ li {
   
   .ap-black-unity-watch-information h4{
     font-weight: var(--ap-font-weight-600);
-    font-size: 1.3em;
+    font-size: var(--ap-h4-fontsize-mobile);
   }
 
   /* End Black Unity Watch */
@@ -765,8 +826,52 @@ li {
       height: 30em;
       overflow: hidden;
    }
+
+   .ap-valentine-day-banner{
+    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676740604/Apple%C2%B4s%20homepage%20project/promo_valentines_day_2023_small_xuuqkl.webp);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+  }
     
   /*End Valentine´s Day*/
+
+
+
+  /* Fitness+ */
+
+  .ap-fitness{
+    height: 30em;
+    overflow: hidden;
+  }
+
+  .ap-fitness-banner{
+    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676740555/Apple%C2%B4s%20homepage%20project/promo_apple_fitness_small_aurhyg.webp);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+  }
+
+
+  /* End Fitness+ */
+
+
+  /* Apple Card */
+
+  .ap-card{
+    height: 30em;
+    overflow: hidden;
+  }
+
+  .ap-card-banner{
+    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676742351/Apple%C2%B4s%20homepage%20project/apple_card_small_h5rfr3.webp);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+  }
+
+
+  /* End Apple Card */
 
   
     
@@ -975,19 +1080,19 @@ li {
     }
     
     .ap-iphone-14-pro-information h2{
-      font-size: 2em;
+      font-size: var(--ap-h2-fontsize-mobile);
     }
     
     .ap-iphone-14-pro-information h3{
-      font-size: 1.2em;
+      font-size: var(--ap-h3-fontsize-mobile);
     }
     
     .ap-iphone-14-pro-information a{
-      font-size: 1.1em;
+      font-size: var(--ap-a-fontsize-main-sections-mobile);
     }
     
     .ap-iphone-ctas{
-      gap: .8em;
+      gap: var(--ap-cta-gap-main-sections-mobile);
     }
 
     /* End Iphone 14 Pro*/
@@ -1013,55 +1118,19 @@ li {
     }
     
     .ap-iphone-14-information h2{
-      font-size: 2em;
+      font-size: var(--ap-h2-fontsize-mobile);
     }
     
     .ap-iphone-14-information h3{
-      font-size: 1.2em;
+      font-size: var(--ap-h3-fontsize-mobile);
     }
     
     .ap-iphone-14-information a{
-      font-size: 1.1em;
+      font-size: var(--ap-a-fontsize-main-sections-mobile);
     }
     
     .ap-iphone-ctas{
-      gap: .8em;
-    }
-
-    /* End Iphone 14 */
-
-    /* Iphone 14 */
-
-    .ap-iphone-14{
-      height: 32em;
-    }
-
-    .ap-iphone-14-banner{
-      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676244717/Apple%C2%B4s%20homepage%20project/iphone_14_normal_responsive_krkj1z.webp);
-      background-size: cover;
-      height: 100%;
-      background-position: center;
-    }
-
-    .ap-iphone-14-information{
-      margin-top: 2.8em;
-      gap: .4em;
-    }
-    
-    .ap-iphone-14-information h2{
-      font-size: 2em;
-    }
-    
-    .ap-iphone-14-information h3{
-      font-size: 1.2em;
-    }
-    
-    .ap-iphone-14-information a{
-      font-size: 1.1em;
-    }
-    
-    .ap-iphone-ctas{
-      gap: .8em;
+      gap: var(--ap-cta-gap-main-sections-mobile);
     }
 
     /* End Iphone 14 */
@@ -1087,19 +1156,19 @@ li {
     }
     
     .ap-homepod-information h2{
-      font-size: 2em;
+      font-size: var(--ap-h2-fontsize-mobile);
     }
     
     .ap-homepod-information h3{
-      font-size: 1.2em;
+      font-size: var(--ap-h3-fontsize-mobile);
     }
     
     .ap-homepod-information a{
-      font-size: 1.1em;
+      font-size: var(--ap-a-fontsize-main-sections-mobile);
     }
     
     .ap-homepod-ctas{
-      gap: .8em;
+      gap: var(--ap-cta-gap-main-sections-mobile);
     }
 
     /* End HomePod */
