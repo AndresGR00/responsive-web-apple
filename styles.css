@@ -537,6 +537,150 @@ li {
   
   /* End Black Unity Watch */
 
+   /* Apple TV */
+
+.ap-tv{
+  height: 36em;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ap-tv-banner{
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900449/Apple%C2%B4s%20homepage%20project/promo_timothee_chalamet__bd9sff.webp);
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  align-items: flex-end;
+}
+
+.ap-tv-information{
+  flex-direction: column;
+  margin-bottom: 2.5em;
+  gap: 1.2em;
+}
+
+.ap-tv-information h4{
+  color: var(--ap-color-050);
+  letter-spacing: 0.1em;
+}
+
+.ap-tv-headline svg{
+  fill: var(--ap-color-050);
+}
+
+.ap-tv-headline{
+  gap: 3px;
+}
+
+
+.ap-tv-information h5{
+  color: var(--ap-color-050);
+}
+
+.ap-tv-information p{
+  color: var(--ap-color-extra);
+  font-size: .8em;
+  letter-spacing: .2em;
+}
+
+
+.ap-tv-information h4{
+  font-weight: var(--ap-font-weight-600);
+  font-size: 2em;
+}
+
+.ap-tv-information h5{
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1.15em;
+}
+
+.ap-tv-information a{
+  color: var(--ap-color-100);
+  font-weight: var(--ap-font-weight-400);
+  font-size: 1em;
+}
+
+.ap-tv-ctas{
+  gap: 2em;
+}
+
+.ap-tv-ctas svg{
+  fill: var(--ap-color-100);
+}
+
+.enlace{
+  gap: .4em;
+}
+
+.enlace:hover{
+  text-decoration: underline;
+}
+
+
+  /* End Apple TV */
+
+
+    /* Valentine´s Day */
+
+    .ap-valentine-day{
+      height: 36em;
+      overflow: hidden;
+    }
+    
+    .ap-valentine-day-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1675900449/Apple%C2%B4s%20homepage%20project/promo_valentines_day_2023__bqunia.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+      align-items: flex-start;
+    }
+    
+    .ap-valentine-day-information{
+      flex-direction: column;
+      margin-top: 4em;
+      gap: .4em;
+      text-align: center;
+    }
+    
+    .ap-valentine-day-information h4{
+      color: var(--ap-color-200);
+    }
+    
+    
+    .ap-valentine-day-information h5{
+      color: var(--ap-color-200);
+    }
+    
+    
+    .ap-valentine-day-information h4{
+      font-weight: var(--ap-font-weight-600);
+      font-size: 2.5em;
+    }
+    
+    .ap-valentine-day-information h5{
+      font-weight: var(--ap-font-weight-400);
+      font-size: 1.2em;
+    }
+    
+    .ap-valentine-day-information a{
+      color: var(--ap-color-100);
+      font-weight: var(--ap-font-weight-400);
+      font-size: 1em;
+    }
+    
+    .enlace{
+      gap: .4em;
+    }
+    
+    .enlace:hover{
+      text-decoration: underline;
+    }
+    
+    
+    /* End Valentine´s Day */
+
+
+
 /* End Promos Section*/
 
 
@@ -602,10 +746,35 @@ li {
     font-size: 1.3em;
   }
 
+  /* End Black Unity Watch */
+
+
+
+  /*Apple TV*/
+
+  .ap-tv{
+    height: 30em;
+    overflow: hidden;
+  }
+
+  /*End Apple TV*/
+
+  /*Valentine´s Day*/
+
+   .ap-valentine-day{
+      height: 30em;
+      overflow: hidden;
+   }
+    
+  /*End Valentine´s Day*/
+
+  
+    
+
 
 }
 
-/* End Black Unity Watch */
+
 
 
 @media screen and (max-width: 1030px){
@@ -940,6 +1109,10 @@ li {
     .ap-promos-section{
       grid-template-columns: 1fr;
       padding: 0;
+    }
+
+    .ap-valentine-day-information{
+      margin-top: 3em;
     }
 
 

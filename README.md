@@ -7,3 +7,5 @@ Iphone Section Just Done (in a responsive way)
 Homepod Section Just Done (in a responsive way)
 
 New path created for promos´ section
+
+4 articulos de promo creados. Queda pendiente hacer el cambio de imagen del valentin´s day en 1068 px
