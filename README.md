@@ -8,5 +8,7 @@ Homepod Section Just Done (in a responsive way)
 
 Promos Section Just Done (in a responsive way)
 
+Carousel Section Just Done (in a responsive way)
+
 
 (Adjust this: ">" its no done yet)

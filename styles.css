@@ -746,300 +746,425 @@ li {
 
 
 
-@media screen and (max-width: 1068px){    /* Promos section changes img*/
 
-   /* Watch*/
+/* Carousel*/
 
-  .ap-watch{
-    height: 30em;
-    overflow: hidden;
-  }
+.ap-carousel {
+  position: relative;
+  margin-top: .7em;
+}
 
-  .ap-watch-banner{
-    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676679694/Apple%C2%B4s%20homepage%20project/apple_watch_series_8_small_j7gq6v.webp);
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-  }
+.ap-carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
 
-  .ap-watch-information {
-    margin-top: 2.5em;
-  }
+.ap-carousel-open:checked + .ap-carousel-item {
+  position: static;
+  opacity: 100;
+}
 
-  .ap-watch-information p{
-    font-size: .65em;
-    letter-spacing: .17em;
-  }
-  
-  
-  .ap-watch-information h4{
-    font-weight: var(--ap-font-weight-600);
-    font-size: var(--ap-h4-fontsize-mobile);
-  }
+.ap-carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.3s ease-out;
+}
 
-  .ap-watch-information-headline svg{
-    height: 1.6em;
-  }
-
-
-/* End Watch */
-
-   /* Black Unity Watch*/
-
-   .ap-black-unity-watch{
-    height: 30em;
-    overflow: hidden;
-  }
-
-  .ap-black-unity-watch-banner{
-    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676681000/Apple%C2%B4s%20homepage%20project/promo_black_unity_watch_small_cnbu1z.webp);
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-  }
-
-  .ap-black-unity-watch-information {
-    margin-top: 2.5em;
-  }  
-  
-  .ap-black-unity-watch-information h4{
-    font-weight: var(--ap-font-weight-600);
-    font-size: var(--ap-h4-fontsize-mobile);
-  }
-
-  /* End Black Unity Watch */
+.ap-carousel-item figure {
+display: block;
+height: auto;
+max-width: 100%;
+width: 100%;
+padding-bottom: 41%;
+}
 
 
+.ap-carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
 
-  /*Apple TV*/
+.ap-carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
 
-  .ap-tv{
-    height: 30em;
-    overflow: hidden;
-  }
+.ap-carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+}
 
-  /*End Apple TV*/
+.ap-carousel-bullet:hover {
+  color: #aaaaaa;
+}
 
-  /*Valentine´s Day*/
 
-   .ap-valentine-day{
+.imagen-1 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831967/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/1_ylymsx.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-2 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831967/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/2_pjk4fx.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-3 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831968/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/3_frm8ir.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-4 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831967/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/4_wbvaz3.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-5 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831967/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/5_vyzwkn.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-6 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831968/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/6_1_cjz19o.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-7 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831968/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/7_gcl9wq.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-8 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831968/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/8_gc3ejj.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-9 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831968/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/9_auswa4.webp);
+background-size: cover;
+background-position: center;
+}
+
+.imagen-10 {
+background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831966/Apple%C2%B4s%20homepage%20project/Carrusel%20PC/10_wgmeid.webp);
+background-size: cover;
+background-position: center;
+}
+
+
+
+
+
+/* End Carousel*/
+
+
+
+  @media screen and (max-width: 1068px){    /* Promos section changes img*/
+
+    /* Watch*/
+
+    .ap-watch{
       height: 30em;
       overflow: hidden;
-   }
+    }
 
-   .ap-valentine-day-banner{
-    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676740604/Apple%C2%B4s%20homepage%20project/promo_valentines_day_2023_small_xuuqkl.webp);
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-  }
+    .ap-watch-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676679694/Apple%C2%B4s%20homepage%20project/apple_watch_series_8_small_j7gq6v.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+    .ap-watch-information {
+      margin-top: 2.5em;
+    }
+
+    .ap-watch-information p{
+      font-size: .65em;
+      letter-spacing: .17em;
+    }
     
-  /*End Valentine´s Day*/
+    
+    .ap-watch-information h4{
+      font-weight: var(--ap-font-weight-600);
+      font-size: var(--ap-h4-fontsize-mobile);
+    }
+
+    .ap-watch-information-headline svg{
+      height: 1.6em;
+    }
+
+
+  /* End Watch */
+
+    /* Black Unity Watch*/
+
+    .ap-black-unity-watch{
+      height: 30em;
+      overflow: hidden;
+    }
+
+    .ap-black-unity-watch-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676681000/Apple%C2%B4s%20homepage%20project/promo_black_unity_watch_small_cnbu1z.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+    .ap-black-unity-watch-information {
+      margin-top: 2.5em;
+    }  
+    
+    .ap-black-unity-watch-information h4{
+      font-weight: var(--ap-font-weight-600);
+      font-size: var(--ap-h4-fontsize-mobile);
+    }
+
+    /* End Black Unity Watch */
 
 
 
-  /* Fitness+ */
+    /*Apple TV*/
 
-  .ap-fitness{
-    height: 30em;
-    overflow: hidden;
+    .ap-tv{
+      height: 30em;
+      overflow: hidden;
+    }
+
+    /*End Apple TV*/
+
+    /*Valentine´s Day*/
+
+    .ap-valentine-day{
+        height: 30em;
+        overflow: hidden;
+    }
+
+    .ap-valentine-day-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676740604/Apple%C2%B4s%20homepage%20project/promo_valentines_day_2023_small_xuuqkl.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+      
+    /*End Valentine´s Day*/
+
+
+
+    /* Fitness+ */
+
+    .ap-fitness{
+      height: 30em;
+      overflow: hidden;
+    }
+
+    .ap-fitness-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676740555/Apple%C2%B4s%20homepage%20project/promo_apple_fitness_small_aurhyg.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+
+    /* End Fitness+ */
+
+
+    /* Apple Card */
+
+    .ap-card{
+      height: 30em;
+      overflow: hidden;
+    }
+
+    .ap-card-banner{
+      background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676742351/Apple%C2%B4s%20homepage%20project/apple_card_small_h5rfr3.webp);
+      background-size: cover;
+      height: 100%;
+      background-position: center;
+    }
+
+
+    /* End Apple Card */
+
+    
+      
+
+
   }
+  @media screen and (max-width: 1030px){
 
-  .ap-fitness-banner{
-    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676740555/Apple%C2%B4s%20homepage%20project/promo_apple_fitness_small_aurhyg.webp);
-    background-size: cover;
-    height: 100%;
-    background-position: center;
+    .ap-header-layout,
+    .ap-header-nav-ul{
+      gap: 40px;                   /*Tricky adjust desktop version*/
+    }
+
   }
+  @media screen and (max-width: 980px){
 
+    .ap-header-layout,
+    .ap-header-nav-ul{
+      gap: 35px;                   /*Tricky adjust desktop version*/
+    }
 
-  /* End Fitness+ */
-
-
-  /* Apple Card */
-
-  .ap-card{
-    height: 30em;
-    overflow: hidden;
   }
+  @media screen and (max-width: 920px){
 
-  .ap-card-banner{
-    background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676742351/Apple%C2%B4s%20homepage%20project/apple_card_small_h5rfr3.webp);
-    background-size: cover;
-    height: 100%;
-    background-position: center;
+    .ap-header-layout,
+    .ap-header-nav-ul{
+      gap: 30px;                   /*Tricky adjust desktop version*/
+    }
+
   }
+  @media screen and (max-width: 870px){
 
+    .ap-header-layout,
+    .ap-header-nav-ul{
+      gap: 27px;                   /*Tricky adjust desktop version*/
+    }
 
-  /* End Apple Card */
+  }
+  @media screen and (max-width: 833px){   /*Main Configuration of breakpoint*/
 
-  
+      /* Header */
+
+      .desktop{
+          display: none;
+      }
+      .mobile{
+          display: inline-block;
+      }
+
+      .ap-header-layout{
+        flex-wrap: wrap;
+      }
+
+      .ap-header-nav{              /*Tricky adjust*/
+        position: relative;
+        padding: 80px 0 0 35px;
+        top: -80px;
+        right: 20px;
+      }
+
+      .ap-header-nav-ul {                /*Tricky adjust*/
+          flex-direction: column;
+          margin: -15px 550px 100% 0;
+          gap: 19px;
+          align-items: flex-start;
+      }
+
+      .ap-hamburger-label{
+          display: inline-block;
+      }
+
+      .ap-header-nav {
+          display: none;
+      }
+
+      .ap-hamburger:checked ~ .ap-header-nav {
+          display: block;
+      }
+
+      /* Animation of hamburger´s lines */
+
+      .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line1 {
+          transform: rotate(45deg);
+      }
+
+      .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line3 {
+          transform: rotate(-45deg);
+      }    
+
+      /* Fin Animation of hamburger´s lines */
+
+      .ap-logo{                   /*Tricky adjust*/
+        position: relative;
+        right: 340px;
+        top: 1.7px;
+      }
+
+      .ap-shop{                    /*Tricky adjust*/
+        position: relative;
+        left: 315px;
+        top: 2px;
+      }
+
+      .ap-search{                   /*Tricky adjust*/
+        position: relative;
+        left: 305px;
+        top: 1.4px;
+      }
+
+      header a{
+        font-size: var(--ap-size-text-navbar-responsive);
+        font-weight: 600;
+        letter-spacing: .007em;
+      }
+
+      /* End Header */
     
 
 
-}
-
-
-
-
-@media screen and (max-width: 1030px){
-
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 40px;                   /*Tricky adjust desktop version*/
   }
+  @media screen and (max-width: 810px){
 
-}
-@media screen and (max-width: 980px){
+      .ap-header-nav-ul {                /*Tricky adjust*/
+        margin: -12px 515px 100% 0;
+      }
 
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 35px;                   /*Tricky adjust desktop version*/
+      .ap-logo{                   /*Tricky adjust*/
+        right: 310px;
+      }
+
+      .ap-shop{                    /*Tricky adjust*/
+        left: 295px;
+      }
+
+      .ap-search{                   /*Tricky adjust*/
+        left: 280px;
+      }
+
   }
+  @media screen and (max-width: 768px){  /*Tablet*/
 
-}
-@media screen and (max-width: 920px){
 
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 30px;                   /*Tricky adjust desktop version*/
+    
+      .ap-header-nav-ul {                
+          margin: -12px 490px 100% 0;
+      }
+
+      .ap-logo{                   
+        right: 305px;
+      }
+
+      .ap-shop{                    
+        left: 280px;
+      }
+
+      .ap-search{                   
+        left: 270px;
+      }
+
+
   }
-
-}
-@media screen and (max-width: 870px){
-
-  .ap-header-layout,
-  .ap-header-nav-ul{
-    gap: 27px;                   /*Tricky adjust desktop version*/
-  }
-
-}
-/* Apple´s Breakpoint */
-@media screen and (max-width: 833px){   /*Main Configuration of breakpoint*/
-
-    /* Header */
-
-    .desktop{
-        display: none;
-    }
-    .mobile{
-        display: inline-block;
-    }
-
-    .ap-header-layout{
-      flex-wrap: wrap;
-    }
-
-    .ap-header-nav{              /*Tricky adjust*/
-      position: relative;
-      padding: 80px 0 0 35px;
-      top: -80px;
-      right: 20px;
-    }
-
-    .ap-header-nav-ul {                /*Tricky adjust*/
-        flex-direction: column;
-        margin: -15px 550px 100% 0;
-        gap: 19px;
-        align-items: flex-start;
-    }
-
-    .ap-hamburger-label{
-        display: inline-block;
-    }
-
-    .ap-header-nav {
-        display: none;
-    }
-
-    .ap-hamburger:checked ~ .ap-header-nav {
-        display: block;
-    }
-
-    /* Animation of hamburger´s lines */
-
-    .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line1 {
-        transform: rotate(45deg);
-    }
-
-    .ap-hamburger:checked + .ap-hamburger-label .hamburger-lines .line3 {
-        transform: rotate(-45deg);
-    }    
-
-    /* Fin Animation of hamburger´s lines */
-
-    .ap-logo{                   /*Tricky adjust*/
-      position: relative;
-      right: 340px;
-      top: 1.7px;
-    }
-
-    .ap-shop{                    /*Tricky adjust*/
-      position: relative;
-      left: 315px;
-      top: 2px;
-    }
-
-    .ap-search{                   /*Tricky adjust*/
-      position: relative;
-      left: 305px;
-      top: 1.4px;
-    }
-
-    header a{
-      font-size: var(--ap-size-text-navbar-responsive);
-      font-weight: 600;
-      letter-spacing: .007em;
-    }
-
-    /* End Header */
-   
-
-
-}
-@media screen and (max-width: 810px){
-
-    .ap-header-nav-ul {                /*Tricky adjust*/
-      margin: -12px 515px 100% 0;
-    }
-
-    .ap-logo{                   /*Tricky adjust*/
-      right: 310px;
-    }
-
-    .ap-shop{                    /*Tricky adjust*/
-      left: 295px;
-    }
-
-    .ap-search{                   /*Tricky adjust*/
-      left: 280px;
-    }
-
-}
-
-@media screen and (max-width: 768px){  /*Tablet*/
-
-
-  
-    .ap-header-nav-ul {                
-        margin: -12px 490px 100% 0;
-    }
-
-    .ap-logo{                   
-      right: 305px;
-    }
-
-    .ap-shop{                    
-      left: 280px;
-    }
-
-    .ap-search{                   
-      left: 270px;
-    }
-
-
-}
-
   @media screen and (max-width: 745px){
 
     .ap-header-nav-ul {                /*Tricky adjust*/
@@ -1187,8 +1312,82 @@ li {
 
 /* End Promos Section*/
 
+/* Carousel*/
 
-  }
+.ap-carousel-item figure {
+  padding-bottom: 30em;
+}
+
+.ap-carousel-indicators{
+  bottom: 1%;
+}
+
+.ap-carousel-bullet {
+  font-size: 1.1em;
+}
+
+.imagen-1 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849358/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/1_kmowz3.webp);
+  background-size: cover;
+  background-position: center;
+}
+.imagen-2 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849357/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/2_aqnqmb.webp);
+  background-size: cover;
+  background-position: center;
+}
+.imagen-3 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849354/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/3_kr3osz.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-4 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849352/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/4_ppueeh.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-5 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849356/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/5_nud59w.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-6 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849360/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/6_m9xfj1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-7 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849360/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/7_zudicy.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-8 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849355/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/8_m8rytp.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-9 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849348/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/9_za1pnq.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-10 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849347/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/10_m523jl.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* End Carousel*/
+
+
+  } 
   @media screen and (max-width: 695px){
 
     .ap-header-nav-ul {                /*Tricky adjust*/
@@ -1322,7 +1521,6 @@ li {
     }
 
   }
-
   @media screen and (max-width: 375px){   /*Mobile*/
 
     .ap-header-nav{              
@@ -1345,9 +1543,79 @@ li {
       left: 80px;
     }
 
+    /* Carousel*/
+
+.ap-carousel-item figure {
+  padding-bottom: 30em;
+}
+
+.ap-carousel-indicators{
+  bottom: 0%;
+}
+
+.ap-carousel-bullet {
+  font-size: 1.3em;
+}
+
+.imagen-1 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831948/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/1_rszrfr.webp);
+  background-size: cover;
+  background-position: center;
+}
+.imagen-2 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831948/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/2_hv49uj.webp);
+  background-size: cover;
+  background-position: center;
+}
+.imagen-3 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831949/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/3_qdbafn.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-4 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831949/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/4_vttmnz.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-5 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831948/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/5_fzvulx.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-6 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831950/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/6_qr65s9.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-7 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831949/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/7_ktkvvs.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-8 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831949/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/8_lbisq9.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-9 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831949/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/9_ip7awf.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-10 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676831948/Apple%C2%B4s%20homepage%20project/Carrusel%20M%C3%B3vil/10_twg231.webp);
+  background-size: cover;
+  background-position: center;
+}
 
   }
-
   @media screen and (max-width: 350px){
 
     .ap-header-nav-ul {                /*Tricky adjust*/
