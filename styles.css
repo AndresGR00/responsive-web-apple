@@ -1311,6 +1311,82 @@ background-position: center;
 
 
 /* End Promos Section*/
+
+/* Carousel*/
+
+.ap-carousel-item figure {
+  padding-bottom: 30em;
+}
+
+.ap-carousel-indicators{
+  bottom: 1%;
+}
+
+.ap-carousel-bullet {
+  font-size: 1.1em;
+}
+
+.imagen-1 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849358/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/1_kmowz3.webp);
+  background-size: cover;
+  background-position: center;
+}
+.imagen-2 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849357/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/2_aqnqmb.webp);
+  background-size: cover;
+  background-position: center;
+}
+.imagen-3 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849354/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/3_kr3osz.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-4 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849352/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/4_ppueeh.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-5 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849356/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/5_nud59w.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-6 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849360/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/6_m9xfj1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-7 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849360/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/7_zudicy.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-8 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849355/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/8_m8rytp.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-9 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849348/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/9_za1pnq.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen-10 {
+  background: url(https://res.cloudinary.com/dbinlquvz/image/upload/v1676849347/Apple%C2%B4s%20homepage%20project/Carrusel%20Movil%20grande/10_m523jl.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+/* End Carousel*/
+
+
   } 
   @media screen and (max-width: 695px){
 
@@ -1478,14 +1554,7 @@ background-position: center;
 }
 
 .ap-carousel-bullet {
-  color: #fff;
-  cursor: pointer;
-  display: block;
   font-size: 1.3em;
-}
-
-.ap-carousel-bullet:hover {
-  color: #aaaaaa;
 }
 
 .imagen-1 {
