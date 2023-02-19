@@ -11,4 +11,7 @@ Promos Section Just Done (in a responsive way)
 Carousel Section Just Done (in a responsive way)
 
 
+New path for develop the footer just created
+
+
 (Adjust this: ">" its no done yet)
