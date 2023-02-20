@@ -14,12 +14,16 @@
 --ap-color-200: #1d1d1f;
 --ap-color-extra: #ed1d0a;
 
+--ap-footer-text-color: #6e6e73;
+--ap-footer-link-color: #424245;
+
 
 --ap-primary-font: Helvetica Neue, Arial, Questrial, sans-serif;
 
 
 --ap-size-text-navbar: 12px;
 --ap-size-text-navbar-responsive: 28px;
+--ap-size-text-footer: .75em;
 
 --ap-font-weight-400: 400;
 --ap-font-weight-600: 600;
@@ -97,6 +101,30 @@ a:hover{
 
 li {
     list-style-type: none;
+}
+
+footer {
+  background-color: var(--ap-color-050);
+  color: var(--ap-footer-text-color);
+  font-weight: var(--ap-font-weight-400);
+  font-size: var(--ap-size-text-footer);
+  margin: 0 auto;
+  padding: 0 22px;
+  overflow: hidden;
+  
+}
+
+footer a{
+  font-weight: var(--ap-font-weight-400);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p{
+  padding-bottom: .8em;
 }
 
 /* End Global Styles */
@@ -751,7 +779,7 @@ li {
 
 .ap-carousel {
   position: relative;
-  margin-top: .7em;
+  margin: 1em 0;
 }
 
 .ap-carousel-inner {
@@ -875,6 +903,99 @@ background-position: center;
 
 
 /* End Carousel*/
+
+
+
+/* Footer*/
+
+
+.ap-footer-content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.4em 0;
+}
+
+.ap-footer-menu {
+  padding-top: 21px;
+  overflow: hidden;
+}
+
+.ap-footer-col {
+  width: 20%;
+  float: left;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+footer h3 {
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.ap-product-list {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.ap-product-list li {
+  margin-bottom: 5px;
+  line-height: 1;
+}
+
+.ap-product-list a {
+  color: #555;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.ap-product-list a:hover {
+  color: #333;
+}
+
+input[type="checkbox"]:checked+.ap-col-section .ap-product-list {
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    visibility: visible;
+    position: static;
+    transform: none;
+}
+
+input[type="checkbox"]:checked+.ap-col-section h3::after {
+    transform: rotate(45deg) scale(1.08);
+}
+
+.ap-footer-base {
+  padding-top: 34px;
+  padding-bottom: 21px;
+  color: #888;
+  font-size: 12px; 
+}
+
+.ap-footer-more-ways {
+  margin-bottom: 7px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.ap-col-section{
+  margin-bottom: 10px;
+}
+
+/* EndFooter*/
+
+
+
 
 
 
@@ -1120,10 +1241,64 @@ background-position: center;
       }
 
       /* End Header */
+
+
+      /* Footer*/
+
+      footer {
+        padding: 0 16px;
+      }
+      
+      .ap-footer-col {
+        width: 100%;
+      }
+      
+      .ap-item {
+        border-bottom: 1px solid #d6d6d6;
+      }
+      
+      footer h3 {
+        padding: 10px 0;
+        margin: 0;
+        cursor: pointer;
+        margin-bottom: -5px;
+      }
+      
+      footer h3::after {
+        content: '+';
+        float: right;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: -2px;
+        margin-right: 8px;
+        transition: transform .3s ease
+      }
+      
+      .ap-product-list {
+        visibility: hidden;
+        position: absolute;
+        transform: translateY(-100px);
+        z-index: 1;
+        padding: 5px 0 16px 0;
+      }
+      
+      .ap-product-list li {
+        margin: 0;
+      }
+      
+      .ap-product-list a {
+        display: block;
+        padding: 6px 14px;
+      }
+      
+      .ap-footer-col {
+        overflow: hidden;
+      }
+    }
+
+      /*End Footer*/
     
 
-
-  }
   @media screen and (max-width: 810px){
 
       .ap-header-nav-ul {                /*Tricky adjust*/
